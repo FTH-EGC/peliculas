@@ -66,3 +66,12 @@ label{
 .boton:hover{
   cursor: pointer;
 }
+
+
+.error{
+  background-color: #CC1A50;
+  padding: .5rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
