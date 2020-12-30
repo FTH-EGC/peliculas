@@ -11,16 +11,20 @@ const Formulario = () => {
         <input
             type="text"
             name="titulo"
+            className="inputs"
 
         />
         <label htmlFor="year">Año:</label>
         <input
             type="text"
             name="year"
+            className="inputs"
         />
         <label htmlFor="trama">Trama:</label>
         <select 
-        name="trama">
+            name="trama"
+            className="inputs"
+        >
             <option value="!#">--Seleccione--</option>
             <option value="short">Pequeña</option>
             <option value="full">Completa</option>
@@ -29,6 +33,7 @@ const Formulario = () => {
         <input 
             type="submit"
             value="Buscar"
+            className="boton"
         />
         </form>
 
