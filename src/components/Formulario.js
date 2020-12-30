@@ -10,6 +10,21 @@ const Formulario = () => {
         trama: ''
     });
 
+    const {titulo, trama} = pelicula;
+
+    const onSubmit = e => {
+        e.preventDefault();
+
+        // Validar
+
+        if(titulo.trim() === "" || trama.trim() === ""){
+            console.log('error')
+        }
+
+    }
+
+
+
     const onChange = e => {
         guardarPelicua({
             ...pelicula,
@@ -22,6 +37,7 @@ const Formulario = () => {
 
         <form action=""
         className="formulario"
+        onSubmit={onSubmit}
         >
         <label htmlFor="titulo">Titulo de la pelicula</label>
         <input
