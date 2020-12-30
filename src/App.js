@@ -12,6 +12,8 @@ function App() {
     trama: ''
   });
 
+  const [consulta, guardarConsultar] = useState(false);
+
   return (
     <Fragment>
 
@@ -22,6 +24,7 @@ function App() {
         <Formulario 
           pelicula={pelicula}
           guardarPelicula={guardarPelicula}
+          guardarConsultar={guardarConsultar}
         
         />
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
-const Formulario = ({pelicula, guardarPelicula}) => {
+const Formulario = ({pelicula, guardarPelicula,guardarConsultar}) => {
 
 
     const [error, guardarError] = useState(false);
@@ -18,6 +18,7 @@ const Formulario = ({pelicula, guardarPelicula}) => {
             return;
         }
         guardarError(false);
+        guardarConsultar(true);
 
     }
 
