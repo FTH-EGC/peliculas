@@ -22,3 +22,11 @@ body{
   padding: .5rem 0;
   text-align: center;
 }
+
+.formulario{
+  margin-top: 5rem;
+  background-color: #EFEFEF;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
