@@ -24,11 +24,13 @@ body{
 }
 
 .formulario{
-  margin-top: 5rem;
   background-color: #EFEFEF;
-  padding: 2rem;
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 5rem auto 0 auto;
+  border-radius: 20px;
 }
 
 .inputs{
@@ -60,4 +62,7 @@ label{
   margin-top: 2rem;
   padding: .8rem;
   font-size: 1.5rem;
+}
+.boton:hover{
+  cursor: pointer;
 }
