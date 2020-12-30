@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
-const Formulario = ({pelicula, guardarPelicula,guardarConsultar}) => {
+const Formulario = ({pelicula, guardarPelicula,guardarConsultar, noexiste}) => {
 
 
     const [error, guardarError] = useState(false);
@@ -38,7 +38,12 @@ const Formulario = ({pelicula, guardarPelicula,guardarConsultar}) => {
         className="formulario"
         onSubmit={onSubmit}
         >
-            {error ? <Error /> : null}
+            {error ? <Error mensaje="Los campos Titulo y Trama son obligatorios" /> : null}
+            {noexiste ? 
+                <Error mensaje="Pelicula no encontrada, intente nuevamente" />
+                :
+                null
+            }
         <label htmlFor="titulo">Titulo de la pelicula</label>
         <input
             type="text"
