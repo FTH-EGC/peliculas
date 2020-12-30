@@ -75,3 +75,17 @@ label{
   color: #ffffff;
   font-weight: bold;
 }
+
+
+.info-peliculas{
+  background-color: #FBFBFB;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 5rem;
+  border: 1px solid #707070;
+}
+
+.info-peliculas h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
