@@ -1,8 +1,7 @@
 import React from 'react';
+import Iconos from './Iconos';
 import Trophy from '../assets/img/trophy.svg';
-import IMDb from '../assets/img/imdb-logo.svg';
-import MetaCritic from '../assets/img/Metacritic.svg';
-import Rotten from '../assets/img/rotten-tomatoes.svg';
+
 
 const InformacionPelicula = ({busqueda}) => {
 
@@ -46,7 +45,9 @@ const InformacionPelicula = ({busqueda}) => {
                     </div>
                     <div className="info">
                         <h2>Ratings:</h2>
-  
+                        <Iconos 
+                            Ratings={Ratings}
+                        />
                     </div>
                 </div>
             </div>
