@@ -5,7 +5,7 @@ import Trophy from '../assets/img/trophy.svg';
 
 const InformacionPelicula = ({busqueda}) => {
 
-    const {Title, Country, Director, Genre, Language, Plot, Poster, Production, Ratings, Runtime, Type, Year, Actors,  Awards} = busqueda;
+    const {Title, Country, Director, Genre, Language, Plot, Poster, Production, Ratings, Runtime, Type, Year, Actors,  Awards, imdbID} = busqueda;
 
     if(!Title) return null;
 
@@ -45,9 +45,12 @@ const InformacionPelicula = ({busqueda}) => {
                     </div>
                     <div className="info">
                         <h2>Ratings:</h2>
-                        <Iconos 
-                            Ratings={Ratings}
-                        />
+                        {Ratings.map(rating => (
+                            <Iconos
+                                key={rating.Source}
+                                rating={rating}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
