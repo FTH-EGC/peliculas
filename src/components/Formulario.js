@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Error from './Error';
 
 const Formulario = () => {
 
@@ -10,6 +10,8 @@ const Formulario = () => {
         trama: ''
     });
 
+    const [error, guardarError] = useState(false);
+
     const {titulo, trama} = pelicula;
 
     const onSubmit = e => {
@@ -18,8 +20,10 @@ const Formulario = () => {
         // Validar
 
         if(titulo.trim() === "" || trama.trim() === ""){
-            console.log('error')
+            guardarError(true);
+            return;
         }
+        guardarError(false);
 
     }
 
@@ -39,6 +43,7 @@ const Formulario = () => {
         className="formulario"
         onSubmit={onSubmit}
         >
+            {error ? <Error /> : null}
         <label htmlFor="titulo">Titulo de la pelicula</label>
         <input
             type="text"
