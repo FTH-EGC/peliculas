@@ -35,8 +35,6 @@ function App() {
         }
         
         guardarConsultar(false);
-
-
   
       }
       consultarAPI();
@@ -59,7 +57,6 @@ function App() {
           guardarPelicula={guardarPelicula}
           guardarConsultar={guardarConsultar}
           noexiste={noexiste}
-          guardarNoExiste={guardarNoExiste}
         />
       </div>
     </div>
