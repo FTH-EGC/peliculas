@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const Formulario = () => {
+
+
+    const [pelicula, guardarPelicua] = useState({
+        titulo: '',
+        year: '',
+        trama: ''
+    });
+
+    const onChange = e => {
+        guardarPelicua({
+            ...pelicula,
+            [e.target.name] : e.target.value
+        })
+    }
+
+
     return ( 
 
         <form action=""
@@ -13,6 +29,7 @@ const Formulario = () => {
             name="titulo"
             className="inputs"
             placeholder="Ej. Guardians of the Galaxy Vol. 2"
+            onChange={onChange}
         />
         <label htmlFor="year">Año:</label>
         <input
@@ -20,11 +37,13 @@ const Formulario = () => {
             name="year"
             className="inputs"
             placeholder="Ej. 2017"
+            onChange={onChange}
         />
         <label htmlFor="trama">Trama:</label>
         <select 
             name="trama"
             className="inputs"
+            onChange={onChange}
         >
             <option value="!#">--Seleccione--</option>
             <option value="short">Pequeña</option>
