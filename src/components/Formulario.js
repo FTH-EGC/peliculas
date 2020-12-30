@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import Error from './Error';
 
-const Formulario = () => {
+const Formulario = ({pelicula, guardarPelicula}) => {
 
-
-    const [pelicula, guardarPelicua] = useState({
-        titulo: '',
-        year: '',
-        trama: ''
-    });
 
     const [error, guardarError] = useState(false);
 
@@ -30,7 +24,7 @@ const Formulario = () => {
 
 
     const onChange = e => {
-        guardarPelicua({
+        guardarPelicula({
             ...pelicula,
             [e.target.name] : e.target.value
         })
