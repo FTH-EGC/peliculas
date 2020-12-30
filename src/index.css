@@ -30,3 +30,34 @@ body{
   display: flex;
   flex-direction: column;
 }
+
+.inputs{
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #707070;
+  padding: .5rem 0;
+}
+
+.inputs:focus{
+
+    outline: none;
+    border-bottom: 2px solid #CC1A50;
+    background-color: #ecdce1;
+}
+
+label{
+  font-size: 1.7rem;
+  margin: 1rem 0 .5rem 0;
+}
+
+.boton{
+  background-color: #CC1A50;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2rem;
+  padding: .8rem;
+  font-size: 1.5rem;
+}
