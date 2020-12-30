@@ -1,11 +1,15 @@
 import React from 'react';
-
+import Trophy from '../assets/img/trophy.svg';
+import IMDb from '../assets/img/imdb-logo.svg';
+import MetaCritic from '../assets/img/Metacritic.svg';
+import Rotten from '../assets/img/rotten-tomatoes.svg';
 
 const InformacionPelicula = ({busqueda}) => {
 
     const {Title, Country, Director, Genre, Language, Plot, Poster, Production, Ratings, Runtime, Type, Year, Actors,  Awards} = busqueda;
 
     if(!Title) return null;
+
 
 
     return ( 
@@ -35,11 +39,14 @@ const InformacionPelicula = ({busqueda}) => {
                     </div>
                     <div className="info">
                         <h2>Premios y Nominaciones:</h2>
-                        <p>{Awards}</p>
+                        <div className="premio">
+                            <img src={Trophy} alt="Imagen Trofeo"/>
+                            <p>{Awards}</p>
+                        </div>
                     </div>
                     <div className="info">
                         <h2>Ratings:</h2>
-
+  
                     </div>
                 </div>
             </div>
