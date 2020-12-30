@@ -12,13 +12,14 @@ const Formulario = () => {
             type="text"
             name="titulo"
             className="inputs"
-
+            placeholder="Ej. Guardians of the Galaxy Vol. 2"
         />
         <label htmlFor="year">Año:</label>
         <input
             type="text"
             name="year"
             className="inputs"
+            placeholder="Ej. 2017"
         />
         <label htmlFor="trama">Trama:</label>
         <select 
