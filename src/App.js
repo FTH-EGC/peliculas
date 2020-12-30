@@ -1,6 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import Header from './components/Header';
-import Formulario from './components/Formulario'
+import Formulario from './components/Formulario';
+import InformacionPelicula from './components/InformacionPelicula';
 
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
     year: '',
     trama: ''
   });
+
+  const [busqueda, guardarBusqueda] = useState({});
   const {titulo, year, trama} = pelicula;
   const [consulta, guardarConsultar] = useState(false);
   const [noexiste, guardarNoExiste] = useState(false);
@@ -25,8 +28,8 @@ function App() {
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
   
+        guardarBusqueda(resultado);
         console.log(resultado);
-
         if(resultado.Error === "Movie not found!"){
           guardarNoExiste(true);
 
@@ -58,6 +61,11 @@ function App() {
           guardarConsultar={guardarConsultar}
           noexiste={noexiste}
         />
+
+        <InformacionPelicula
+          busqueda={busqueda}
+        />
+
       </div>
     </div>
 
