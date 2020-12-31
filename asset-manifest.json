@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/peliculas/static/css/main.e95a9a80.chunk.css",
+    "main.js": "/peliculas/static/js/main.ae2a570d.chunk.js",
+    "main.js.map": "/peliculas/static/js/main.ae2a570d.chunk.js.map",
+    "runtime-main.js": "/peliculas/static/js/runtime-main.ddace208.js",
+    "runtime-main.js.map": "/peliculas/static/js/runtime-main.ddace208.js.map",
+    "static/js/2.323a5b45.chunk.js": "/peliculas/static/js/2.323a5b45.chunk.js",
+    "static/js/2.323a5b45.chunk.js.map": "/peliculas/static/js/2.323a5b45.chunk.js.map",
+    "static/js/3.b6416d68.chunk.js": "/peliculas/static/js/3.b6416d68.chunk.js",
+    "static/js/3.b6416d68.chunk.js.map": "/peliculas/static/js/3.b6416d68.chunk.js.map",
+    "index.html": "/peliculas/index.html",
+    "static/css/main.e95a9a80.chunk.css.map": "/peliculas/static/css/main.e95a9a80.chunk.css.map",
+    "static/js/2.323a5b45.chunk.js.LICENSE.txt": "/peliculas/static/js/2.323a5b45.chunk.js.LICENSE.txt",
+    "static/media/Metacritic.dd75e2f3.svg": "/peliculas/static/media/Metacritic.dd75e2f3.svg",
+    "static/media/imdb-logo.290115c3.svg": "/peliculas/static/media/imdb-logo.290115c3.svg",
+    "static/media/rotten-tomatoes.2936e952.svg": "/peliculas/static/media/rotten-tomatoes.2936e952.svg",
+    "static/media/trophy.d6a07d1b.svg": "/peliculas/static/media/trophy.d6a07d1b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ddace208.js",
+    "static/js/2.323a5b45.chunk.js",
+    "static/css/main.e95a9a80.chunk.css",
+    "static/js/main.ae2a570d.chunk.js"
+  ]
+}
