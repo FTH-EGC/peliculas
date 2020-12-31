@@ -5,7 +5,6 @@ const Formulario = ({pelicula, guardarPelicula,guardarConsultar, noexiste}) => {
 
 
     const [error, guardarError] = useState(false);
-
     const {titulo, trama} = pelicula;
 
     const onSubmit = e => {
@@ -44,7 +43,7 @@ const Formulario = ({pelicula, guardarPelicula,guardarConsultar, noexiste}) => {
                 :
                 null
             }
-        <label htmlFor="titulo">Titulo de la pelicula</label>
+        <label htmlFor="titulo">Titulo de la pelicula:</label>
         <input
             type="text"
             name="titulo"
