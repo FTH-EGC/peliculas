@@ -1,11 +1,13 @@
 import React from 'react';
 import Iconos from './Iconos';
 import Trophy from '../assets/img/trophy.svg';
+import PropTypes from 'prop-types'
+
 
 
 const InformacionPelicula = ({busqueda}) => {
 
-    const {Title, Country, Director, Genre, Language, Plot, Poster, Production, Ratings, Runtime, Type, Year, Actors,  Awards, imdbID} = busqueda;
+    const {Title, Country, Director, Genre, Language, Plot, Poster, Production, Ratings, Runtime, Type, Year, Actors,  Awards} = busqueda;
 
     if(!Title) return null;
 
@@ -58,6 +60,10 @@ const InformacionPelicula = ({busqueda}) => {
             </div>
         </div>
      );
+}
+
+InformacionPelicula.propTypes = {
+    busqueda: PropTypes.object.isRequired
 }
  
 export default InformacionPelicula;

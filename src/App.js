@@ -29,7 +29,6 @@ function App() {
         const resultado = await respuesta.json();
   
         guardarBusqueda(resultado);
-        console.log(resultado);
         if(resultado.Error === "Movie not found!"){
           guardarNoExiste(true);
 

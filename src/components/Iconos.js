@@ -1,7 +1,8 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import IMDb from '../assets/img/imdb-logo.svg';
 import MetaCritic from '../assets/img/Metacritic.svg';
 import Rotten from '../assets/img/rotten-tomatoes.svg';
+import PropTypes from 'prop-types'
 
 
 
@@ -35,4 +36,8 @@ const Iconos = ({rating}) => {
      );
 }
  
+Iconos.propTypes = {
+    rating: PropTypes.object.isRequired
+}
+
 export default Iconos;
