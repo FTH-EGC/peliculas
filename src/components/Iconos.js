@@ -10,9 +10,6 @@ const Iconos = ({rating}) => {
 
     const {Source, Value} = rating;
 
-    console.log(Source);
-    console.log(Value);
-
     let imagen;
     switch(Source){
         case 'Internet Movie Database':
@@ -29,12 +26,12 @@ const Iconos = ({rating}) => {
     }
 
     return ( 
-        <div className="iconos">
-            <img src={imagen} alt="Imagen Iconos"/>
-            <p>{Source}</p>
-            <p>{Value}</p>
 
-        </div>
+            <div className="icono">
+                <img src={imagen} alt="Imagen Iconos"/>
+                <p>{Value}</p>
+            </div>
+
      );
 }
  

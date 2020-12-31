@@ -45,12 +45,14 @@ const InformacionPelicula = ({busqueda}) => {
                     </div>
                     <div className="info">
                         <h2>Ratings:</h2>
+                        <div className="iconos">
                         {Ratings.map(rating => (
                             <Iconos
                                 key={rating.Source}
                                 rating={rating}
                             />
                         ))}
+                        </div>
                     </div>
                 </div>
             </div>
