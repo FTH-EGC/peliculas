@@ -23,7 +23,7 @@ function App() {
 
     if(consulta){
       const consultarAPI = async () => {
-        const url = `http://www.omdbapi.com/?t=${titulo}&y=${year}&plot=${trama}&apikey=3aefd129`;
+        const url = `https://www.omdbapi.com/?t=${titulo}&y=${year}&plot=${trama}&apikey=3aefd129`;
   
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
